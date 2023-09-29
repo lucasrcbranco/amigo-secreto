@@ -14,13 +14,13 @@ body {
 }
 
 .container > select {
-  width: 30%;
-  height: 10%;
+  width: 60%;
+  height: 20%;
   margin-bottom: 10px;
 }
 
 .container > button {
-  width: 30%;
-  height: 10%;
+  width: 60%;
+  height: 20%;
   margin-bottom: 10px;
 }
