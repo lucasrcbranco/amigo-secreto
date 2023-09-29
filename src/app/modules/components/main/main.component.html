@@ -1,0 +1,19 @@
+<div class='container'>
+  <select *ngIf='participantes.length !== 0' [(ngModel)]="participanteSelecionadoId">
+    <option *ngFor="let participante of participantes" [value]="participante.id">
+      {{participante.nome}}
+    </option>
+  </select>
+
+  <button *ngIf='participantes.length !== 0' (click)="realizarSorteio()">Sortear!</button>
+
+  <h2 *ngIf="amigoSecretoSorteadoNome !== ''">
+    Seu amigo secreto é {{amigoSecretoSorteadoNome}}
+  </h2>
+
+  <h2 *ngIf="amigoSecretoSorteadoNome === '' && participantes.length !== 0">
+    Sorteie seu amigo secreto acima
+  </h2>
+
+  <h1 *ngIf='participantes.length === 0'>Todos os amigos secretos já foram sorteados.</h1>
+</div>

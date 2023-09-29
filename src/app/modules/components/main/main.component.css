@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container > select {
+  width: 30%;
+  height: 10%;
+  margin-bottom: 10px;
+}
+
+.container > button {
+  width: 30%;
+  height: 10%;
+  margin-bottom: 10px;
+}
